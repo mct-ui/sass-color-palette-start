@@ -1,0 +1,96 @@
+/*---------------------------------------/*
+ # SETTINGS
+/*---------------------------------------*/
+$color-blue: #1abaff;
+// get the hue of the blue color with the hue function
+// $color-blue-hue: ;
+// get the saturation of the blue color with the saturation function
+// $color-blue-saturation: ;
+
+$color-teal: #1affba;
+// get the hue of the teal color with the hue function
+// $color-teal-hue: ;
+// get the saturation of the teal color with the saturation function
+// $color-teal-saturation: ;
+
+// set the hue of the gray color to the hue of the blue color
+//$color-gray-hue: ;
+// set the saturation of the gray color to a custom value
+//$color-gray-saturation: ;
+
+// create a map of palettes
+// you should have 3 palettes: blue, teal, and gray
+
+// $palettes: (
+//   color-name: (
+//     100: hsl($color-name-hue, $color-name-saturation, 95%)
+//     200: hsl($color-name-hue, $color-name-saturation, 90%)
+//     300: hsl($color-name-hue, $color-name-saturation, 80%)
+//     ...
+//   ),
+//   ...
+// );
+
+/*---------------------------------------/*
+ # TOOLS
+/*---------------------------------------*/
+
+// create a Sass function to get a color from the palette
+
+/*---------------------------------------/*
+ # GENERIC
+/*---------------------------------------*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*---------------------------------------/*
+ # ELEMENTS
+/*---------------------------------------*/
+
+body {
+  margin: 0;
+  padding: 2rem;
+  font-family: sans-serif;
+}
+
+/*---------------------------------------/*
+ # OBJECTS
+/*---------------------------------------*/
+
+/*---------------------------------------/*
+ # COMPONENTS
+/*---------------------------------------*/
+
+.c-palette {
+  // make sure the palette is a flex container
+
+  &__swatch {
+    // make sure the swatch grows to fill the container
+    // make sure the swatch has a 3:2 aspect ratio
+  }
+}
+
+.c-palette + .c-palette {
+  margin-top: 2rem;
+}
+
+h1 {
+  // set the h1 to the lightest background color of the gray palette with the get color function
+  // set the h1 to the darkest color of the gray palette with the get color function
+  padding: 1rem;
+}
+
+/*---------------------------------------/*
+ # UTILITIES
+/*---------------------------------------*/
+
+// Generate a utility background-color class for each color in each palette
+// for example, the gray palette should have the following classes withe associated color set as the val:
+
+// .u-background-color-gray-100 {
+//   background-color: generated color from the palette;
+// }
