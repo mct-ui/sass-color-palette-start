@@ -1,2 +1,2 @@
-# Sass color palette solution
-Generate color palettes with code in Sass.
+# Sass color palette start files
+Generate color palettes with Sass maps.
